@@ -1,0 +1,15 @@
+.imagebox {
+    width: 100%;
+    height: 400px;
+    border: solid black;
+}
+.ip_workspace .ip_filterset{
+    padding: 0px 20px
+
+}
+.ip_btn {
+    margin: 0px 3px;
+}
+.ip_workspace_menu {
+    padding: 20px 20px 10px 20px;
+}
