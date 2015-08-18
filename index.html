@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>IPIDE - Image Processing IDE</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -48,18 +48,12 @@
 
         <ul class="nav navbar-nav">
 
-            <li class="active"><a onclick="IPIDE.IDE.newWorkSpace()">New</a></li>
-
-            <li><a href="#">Profile</a></li>
-
-            <li><a href="#">Messages</a></li>
+            <li class="active"><a id="ide_newworkspace" href="#">New Workspace</a></li>
 
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
-
-            <li><a href="#">Login</a></li>
-
+            
         </ul>
 
     </div>
@@ -84,14 +78,19 @@
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="js/ip.js"></script>
+<script src="https://cdn.rawgit.com/eligrey/Blob.js/master/Blob.js"></script>
+<script src="js/canvas-toBlob.js"></script>
+<script src="js/FileSaver.min.js"></script>
+
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
-
+<script src="js/ip.js"></script>
 <script>
     $(document).ready(function () {
         //add a workspace
-        IPIDE.IDE.newWorkSpace();
+        IPIDE.IDE.init();
+        IPIDE.IDE.newWorkSpace()
+
         //add filters to filter list
     });
 </script>
