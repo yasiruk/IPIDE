@@ -27,6 +27,7 @@
     border-radius: 4px;
     margin-top:1px;
     padding-left:10px;
+    padding-bottom: 10px;
 }
 a.filterclose {
     float:right;
