@@ -12,7 +12,7 @@ IPIDE.IDE = {
             event.preventDefault();
             IPIDE.IDE.newWorkSpace();
         });
-        $(document).on("click", ".filterlist", IPIDE.IDE.onChangeFilterset);
+        $(document).on("change", ".filterlist", IPIDE.IDE.onChangeFilterset);
         $(document).on("click", ".filterapplybtn", function (event) {
             var id = $(event.target).attr("data-ipide-id");
             console.log(event.target);
